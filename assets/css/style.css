@@ -1,0 +1,286 @@
+/*
+  Archivo: style.css
+  Proyecto: Sitio Web IAS 
+  Descripción: Estilos generales para todas las páginas
+  Paleta de colores:
+  #00ACAC Turquesa: header, details, footer
+  #006666 Turquesa oscuro: color principal, labels
+  #003535 Turquesa muy oscuro: hover del menu, bordes de tabla
+  #cff1f1 Celeste muy claro: fondo del cuerpo
+  #ca9be0 Lila: hover del mapa y bienvenida
+  #ffffff Blanco: fondos, texto en botones y footer, tablas
+  #333333 Gris oscuro: texto del cuerpo
+  #cccccc Gris claro: bordes de inputs
+  #00683d Verde oscuro: link del mapa
+  #2563a8 Azul: focus en inputs
+*/
+
+/* Define la fuente (font-family), color del texto (color), establece colores de fondo (backround-color) 
+y ajusta los margenes (margin) y controla el espacio entre el borde de la ventana del navegador y
+el contenido (padding). Esto hace efecto en toda la pagina. */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #cff1f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Asigna tipo de fuente, tamaño del margen inferior y color para h1, h2 y h3.*/
+h1, h2, h3 {
+    font-family: Verdana, Arial, serif;
+    color: #006666;
+    margin-bottom: 12px;
+}
+
+/* Asigna el tamaño de letra para h1, h2 y h3 por separado.*/
+
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.1em; }
+
+/* Define el interlineado (line-height), la alineación del texto
+   (text-align) y el espacio inferior entre párrafos (margin-bottom). */
+p {
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Define el color de los enlaces y elimina el subrayado
+   por defecto (text-decoration). Aplica a todos los enlaces de la pagina. */
+a {
+    color: #00683d;
+    text-decoration: solid;
+}
+
+/* Cambia el color del enlace cuando el usuario pasa el mouse por encima. */
+a:hover {
+    color: #ca9be0;
+}
+
+/* Define el color de fondo, el centrado del texto
+   y el espacio interno (padding) de la cabecera del sitio. */
+header {
+    background-color: #00ACAC;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Aplica estilos al menu de navegación.
+   Establece el fondo, el espacio interno y centra los enlaces del menú. */
+#menu-principal {
+    background-color: #006666;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estiliza el contenedor del formulario
+   de consultas, definiendo fondo, espaciado, borde y ancho máximo. */
+#formulario-contacto {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 5px solid #006666;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+/* Resalta la sección de bienvenida en index.html
+   con un fondo de color diferente y borde punteado para que destaque. */
+.bienvenida {
+    background-color: #ca9be0;
+    border-style: dotted;
+}
+
+/* Agrega un borde sólido a las imágenes
+   que tienen esta clase para que resalten. */
+.estilo-imagen {
+    border: 3px solid #333; /* Borde sólido */
+}
+
+/* Cambia el estilo de los ítems de la lista no ordenada de funciones del IAS, 
+usando un cuadrado en lugar de un punto. */
+.servicio-item {
+    list-style-type: square;
+}
+
+/* Aplica numeración romana en mayúsculas
+   a la lista ordenada de compromisos de responsabilidad social. */
+.lista-responsabilidad {
+    list-style-type:upper-roman;
+}
+
+/* Da estilo al botón de envío del formulario, con un color de fondo, color de texto,
+ tamaño de fuente, padding y bordes redondeados. */
+.btn-enviar {
+    background-color: #006666;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Aplica estilos a todos los enlaces dentro del nav,
+   definiendo color, eliminando subrayado y agregando padding para mayor área de clic. */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+/* Cambia el fondo del enlace de navegación al pasar el mouse */
+nav a:hover {
+    background-color: #003535;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Define el ancho máximo del área de contenido principal,
+   el ancho relativo y el centrado horizontal automático con margin auto. */
+main {
+    max-width: 900px;
+    width: 90%;
+    margin: 25px auto;
+}
+
+/* Estiliza cada sección de contenido con fondo blanco,
+   padding interno, margen inferior, borde de color y esquinas redondeadas. */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 22px;
+    border: 5px solid;
+    border-color: #006666;
+    border-radius: 10px;
+}
+
+/* Aplica un borde oscuro a la tabla completa
+   y a cada celda de encabezado y datos. */
+table, th, td {
+     border: 3px solid #003535
+}
+
+/* Colapsa los bordes de la tabla para que no haya espacio doble entre celdas. */
+table {
+    border-collapse: collapse;
+}
+
+/* Aplica un fondo oscuro y texto blanco a las celdas de encabezado. */
+table th {
+    background-color: #006666;
+    color: #ffffff;
+}
+
+/* Agrega padding, alineación a la
+   izquierda y negrita al texto de los encabezados de columna. */
+table th {
+    padding: 11px 14px;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*  Agrega padding y fondo blanco a las celdas de datos de la tabla. */
+table td {
+    padding: 14px;
+    background-color:#ffffff;
+}
+
+/* Da estilo a la lista desplegable (horarios extendidos) con fondo,
+ color de borde, bordes redondeados y padding. */
+details {
+    background-color: #00ACAC;
+    border: 5px solid #006666;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 22px;
+}
+
+/* Da estilo al título visible de la lista desplegable,
+   con texto en negrita, color blanco y cursor tipo puntero. */
+summary {
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Da estilo a las etiquetas de los campos del formulario
+   con negrita, color y tamaño de fuente. */
+label {
+    font-weight: bold;
+    color: #006666;
+    font-size: 0.95em;
+}
+
+/* Aplica estilos a los campos de texto, email y teléfono del formulario,
+   definiendo ancho completo, padding, borde, tipografía y color. */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size:medium;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Cambia el borde del campo activo cuando el usuario
+   hace clic en él, eliminando el contorno por defecto. */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563a8;
+}
+
+/* Da estilo el menú desplegable de motivo de consulta
+   con ancho completo, padding, borde, tipografía y color de texto. */
+select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Da estilo a el campo de texto largo del formulario
+   con ancho completo, padding, borde redondeado y tipografía consistente. */
+textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Define el fondo, color de texto, centrado,
+   padding y margen superior del pie de página. */
+footer {
+    background-color: #00ACAC;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+/* Aplica estilos específicos a los párrafos
+   dentro del footer, como color, centrado, tamaño, negrita e interlineado. */
+footer p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 4px;
+    line-height: 1.6;
+}
