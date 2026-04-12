@@ -85,7 +85,19 @@ header {
 #menu-principal {
     background-color: #006666;
     padding: 10px;
-    text-align: center;
+}
+
+/* Flexbox para el menú de navegación
+   - display: flex activa el modo flexbox en la lista del menú
+   - justify-content: space-around distribuye los elementos con espacio igual alrededor de cada uno
+   - list-style: none elimina los puntos de la lista
+*/
+#menu-principal ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estiliza el contenedor del formulario
