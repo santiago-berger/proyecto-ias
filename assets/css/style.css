@@ -27,6 +27,18 @@ body {
     padding: 0;
 }
 
+/* Grid para el layout general de la página
+   - display: grid activa el modo grid en el contenedor principal
+   - grid-template-rows: auto auto 1fr auto distribuye las filas: header, nav, main (ocupa el espacio disponible) y footer
+   - min-height: 100vh hace que la página ocupe como mínimo toda la altura de la ventana del navegador
+*/
+
+.container {
+    display:grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
 /* Asigna tipo de fuente, tamaño del margen inferior y color para h1, h2 y h3.*/
 h1, h2, h3 {
     font-family: Verdana, Arial, serif;
