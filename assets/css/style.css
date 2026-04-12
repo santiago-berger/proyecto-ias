@@ -183,6 +183,17 @@ section {
     border-radius: 10px;
 }
 
+/* Grid para la lista de funciones del IAS
+   - display: grid activa el modo grid en las listas dentro de main
+   - grid-template-columns: 1fr 1fr crea 2 columnas de igual tamaño
+   - gap: define un espacio de 20px entre los elementos
+*/
+main ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 /* Aplica un borde oscuro a la tabla completa
    y a cada celda de encabezado y datos. */
 table, th, td {
