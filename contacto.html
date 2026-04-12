@@ -14,132 +14,134 @@
     Fecha: [06/04/2026] -->
 
   <body>
-    <header>
-      <h1>Instituto de Asistencia Social - IAS</h1>
-      <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Instituto de Asistencia Social - IAS</h1>
+        <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
+      </header>
 
-    <nav id="menu-principal">
-      <a href="index.html">Inicio</a>
-      <a href="sobre-ias.html">Sobre el IAS</a>
-      <a href="funciones.html">Funciones</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+      <nav id="menu-principal">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-ias.html">Sobre el IAS</a>
+        <a href="funciones.html">Funciones</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
 
-    <main>
-      <section>
-        <h2>Contacto</h2>
+      <main>
+        <section>
+          <h2>Contacto</h2>
 
-        <ul>
-          <li>
-            <address>Belgrano 798 - Formosa Capital CP P3600 COR</address>
-          </li>
-          <li>Teléfonos: (+54) (370) 4426114 - 4429568</li>
-          <li>
-            Correo electrónico:
-            <a href="mailto:info@ias.gob.ar">info@ias.gob.ar</a>
-          </li>
-        </ul>
-      </section>
+          <ul>
+            <li>
+              <address>Belgrano 798 - Formosa Capital CP P3600 COR</address>
+            </li>
+            <li>Teléfonos: (+54) (370) 4426114 - 4429568</li>
+            <li>
+              Correo electrónico:
+              <a href="mailto:info@ias.gob.ar">info@ias.gob.ar</a>
+            </li>
+          </ul>
+        </section>
 
-      <!--  
-      Form es el contenedor de todos los campos. Label es el texto que describe cada campo. 
-      El atributo for tiene que coincidir con el id del input al que pertenece, así al hacer 
-      click en el label el cursor va directo al campo. Input son los campos de una sola línea. 
-      El type le dice al navegador qué tipo de dato espera. Select es el menú desplegable de opciones. 
-      Cada option es una opción del listado. Text area es el campo de texto para el mensaje. Placeholder 
-      es el texto de ejemplo que aparece dentro del campo vacío. Required hace que el campo sea obligatorio.
-      Button es el botón que envía el formulario.
-      -->
-      <h2>Formulario de Consulta</h2>
+        <!--  
+        Form es el contenedor de todos los campos. Label es el texto que describe cada campo. 
+        El atributo for tiene que coincidir con el id del input al que pertenece, así al hacer 
+        click en el label el cursor va directo al campo. Input son los campos de una sola línea. 
+        El type le dice al navegador qué tipo de dato espera. Select es el menú desplegable de opciones. 
+        Cada option es una opción del listado. Text area es el campo de texto para el mensaje. Placeholder 
+        es el texto de ejemplo que aparece dentro del campo vacío. Required hace que el campo sea obligatorio.
+        Button es el botón que envía el formulario.
+        -->
+        <h2>Formulario de Consulta</h2>
 
-      <form id="formulario-contacto" action="#" method="post">
-        <!-- Campo: Nombre completo -->
-        <label for="nombre">Nombre completo</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          placeholder="Ingresa tu nombre acá."
-          required
-        />
+        <form id="formulario-contacto" action="#" method="post">
+          <!-- Campo: Nombre completo -->
+          <label for="nombre">Nombre completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre acá."
+            required
+          />
 
-        <!-- Campo: Correo electrónico -->
-        <label for="email">Correo electrónico</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Ej. info.contacto@gmail.com"
-          required
-        />
+          <!-- Campo: Correo electrónico -->
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ej. info.contacto@gmail.com"
+            required
+          />
 
-        <!-- Campo: Teléfono -->
-        <label for="telefono">Teléfono</label>
-        <input
-          type="tel"
-          id="telefono"
-          name="telefono"
-          placeholder="Ej: (370) 4123456"
-        />
+          <!-- Campo: Teléfono -->
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Ej: (370) 4123456"
+          />
 
-        <!-- Campo: Motivo de consulta -->
-        <label for="motivo">Motivo de consulta</label>
-        <select id="motivo" name="motivo" required>
-          <option value="">-- Seleccioná un motivo --</option>
-          <option value="licencias">Información sobre licencias</option>
-          <option value="denuncia">Realizar una denuncia</option>
-          <option value="juego_responsable">Juego responsable</option>
-          <option value="habilitaciones">Habilitaciones y permisos</option>
-          <option value="recaudacion">Recaudación y destino de fondos</option>
-          <option value="otro">Otro</option>
-        </select>
+          <!-- Campo: Motivo de consulta -->
+          <label for="motivo">Motivo de consulta</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">-- Seleccioná un motivo --</option>
+            <option value="licencias">Información sobre licencias</option>
+            <option value="denuncia">Realizar una denuncia</option>
+            <option value="juego_responsable">Juego responsable</option>
+            <option value="habilitaciones">Habilitaciones y permisos</option>
+            <option value="recaudacion">Recaudación y destino de fondos</option>
+            <option value="otro">Otro</option>
+          </select>
 
-        <!-- Campo: Mensaje -->
-        <label for="mensaje">Mensaje</label>
-        <textarea
-          id="mensaje"
-          name="mensaje"
-          placeholder="Escribí tu consulta, denuncia o comentario acá"
-          required
-        ></textarea>
+          <!-- Campo: Mensaje -->
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribí tu consulta, denuncia o comentario acá"
+            required
+          ></textarea>
 
-        <!-- Botón de envío -->
+          <!-- Botón de envío -->
+          <br />
+          <button type="submit" class="btn-enviar">Enviar consulta</button>
+        </form>
         <br />
-        <button type="submit" class="btn-enviar">Enviar consulta</button>
-      </form>
-      <br />
-      <details>
-        <summary>Ver horarios de atención extendidos</summary>
-        <br />
-        <ul>
-          <li>Lunes a Viernes: 7:00 - 15:00</li>
-          <li>Sábados: 8:00 - 12:00</li>
-          <li>Feriados nacionales: cerrado</li>
-        </ul>
-      </details>
+        <details>
+          <summary>Ver horarios de atención extendidos</summary>
+          <br />
+          <ul>
+            <li>Lunes a Viernes: 7:00 - 15:00</li>
+            <li>Sábados: 8:00 - 12:00</li>
+            <li>Feriados nacionales: cerrado</li>
+          </ul>
+        </details>
 
-      <h2>Ubicación</h2>
+        <h2>Ubicación</h2>
 
-      <div>
-        <img
-          src="assets/img/mapa.png"
-          alt="Mapa de ubicación del Instituto de Asistencia Social en Formosa Capital"
-          width="600"
-        />
-        <br />
-        <a
-          href="https://www.google.com/maps/place/Belgrano+798,+P3600+Formosa/@-26.1820697,-58.1651543,17z/data=!3m1!4b1!4m6!3m5!1s0x945ca5dd9543e689:0x12d57c9649441922!8m2!3d-26.1820697!4d-58.1651543!16s%2Fg%2F11zkmftdmw?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D"
-          target="_blank"
-        >
-          Ver ubicación en Google Maps
-        </a>
-      </div>
-    </main>
+        <div>
+          <img
+            src="assets/img/mapa.png"
+            alt="Mapa de ubicación del Instituto de Asistencia Social en Formosa Capital"
+            width="600"
+          />
+          <br />
+          <a
+            href="https://www.google.com/maps/place/Belgrano+798,+P3600+Formosa/@-26.1820697,-58.1651543,17z/data=!3m1!4b1!4m6!3m5!1s0x945ca5dd9543e689:0x12d57c9649441922!8m2!3d-26.1820697!4d-58.1651543!16s%2Fg%2F11zkmftdmw?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
+            Ver ubicación en Google Maps
+          </a>
+        </div>
+      </main>
 
-    <footer>
-      <p>&copy; 2026 Instituto de Asistencia Social</p>
-      <p>Santiago Christian Berger</p>
-    </footer>
+      <footer>
+        <p>&copy; 2026 Instituto de Asistencia Social</p>
+        <p>Santiago Christian Berger</p>
+      </footer>
+    </div>
   </body>
 </html>

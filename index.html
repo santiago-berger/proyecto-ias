@@ -7,89 +7,91 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-<!-- Página: Inicio
+    <!-- Página: Inicio
     Descripción: Página de inicio del sitio web del IAS que contiene una sección de bienvenida
     introduciendo que es IAS, incluyendo dos imagenes representativas.
     Autor: [Santiago Christian Berger]
     Fecha: [06/04/2026] -->
 
   <body>
-    <!-- El header es la cabecera principal. Contiene el nombre del organismo en h1
-         y el subtítulo con su función en h2. Se repite igual en todas las páginas. -->
-    <header>
-      <h1>Instituto de Asistencia Social - IAS</h1>
-      <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
-    </header>
+    <div class="container">
+      <!-- El header es la cabecera principal. Contiene el nombre del organismo en h1
+          y el subtítulo con su función en h2. Se repite igual en todas las páginas. -->
+      <header>
+        <h1>Instituto de Asistencia Social - IAS</h1>
+        <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
+      </header>
 
-    <!-- El nav es el menú de navegación principal. Contiene los enlaces a las cuatro páginas. -->
-    <nav id="menu-principal">
-        <a href="index.html">Inicio</a>
-        <a href="sobre-ias.html">Sobre el IAS</a>
-        <a href="funciones.html">Funciones</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+      <!-- El nav es el menú de navegación principal. Contiene los enlaces a las cuatro páginas. -->
+      <nav id="menu-principal">
+          <a href="index.html">Inicio</a>
+          <a href="sobre-ias.html">Sobre el IAS</a>
+          <a href="funciones.html">Funciones</a>
+          <a href="contacto.html">Contacto</a>
+      </nav>
 
-    <!-- El main es el contenido principal de la página. Solo debe haber un main por página. -->
-    <main>
+      <!-- El main es el contenido principal de la página. Solo debe haber un main por página. -->
+      <main>
 
-      <section class="bienvenida">
-        <h2>Bienvenidos al IAS</h2>
+        <section class="bienvenida">
+          <h2>Bienvenidos al IAS</h2>
 
-        <p>
-          El <strong>Instituto de Asistencia Social (IAS)</strong> es el
-          organismo oficial de Formosa encargado de la
-          <em>regulación, fiscalización y control de los juegos de azar</em>
-          en toda la provincia. Fue creado con el propósito de garantizar que la
-          actividad del juego se desarrolle dentro de un marco legal,
-          transparente y socialmente responsable.
-        </p>
+          <p>
+            El <strong>Instituto de Asistencia Social (IAS)</strong> es el
+            organismo oficial de Formosa encargado de la
+            <em>regulación, fiscalización y control de los juegos de azar</em>
+            en toda la provincia. Fue creado con el propósito de garantizar que la
+            actividad del juego se desarrolle dentro de un marco legal,
+            transparente y socialmente responsable.
+          </p>
 
-        <p>
-          A través de su gestión, el IAS destina una parte significativa de los
-          fondos recaudados a
-          <strong>programas sociales, educativos y de salud</strong>
-          que benefician a la comunidad formoseña. Su función no se limita al
-          control administrativo, sino que también promueve activamente el
-          <em>juego responsable</em> y trabaja en la prevención de la ludopatía
-          como problema de salud pública.
-        </p>
+          <p>
+            A través de su gestión, el IAS destina una parte significativa de los
+            fondos recaudados a
+            <strong>programas sociales, educativos y de salud</strong>
+            que benefician a la comunidad formoseña. Su función no se limita al
+            control administrativo, sino que también promueve activamente el
+            <em>juego responsable</em> y trabaja en la prevención de la ludopatía
+            como problema de salud pública.
+          </p>
 
-        <img class="estilo-imagen"
-          src="assets/img/logo-ias.jpg"
-          alt="Logo del Instituto de Asistencia Social de Formosa"
-          width="350"
-        />
-      </section>
-
-        <h2>Juego Responsable</h2>
-        <p>
-          El IAS impulsa campañas de concientización sobre el
-          juego responsable, fomentando hábitos saludables entre los ciudadanos
-          y especialmente protegiendo a los grupos más vulnerables.
-        </p>
-
-        <!--  Elemento semántico para agrupar una imagen con su descripción . -->
-        <figure>
-      
-        <img class="estilo-imagen"
-            src="assets/img/juego-responsable.jpg"
-            alt="Campaña de juego responsable del IAS Formosa"
-            width="500"
+          <img class="estilo-imagen"
+            src="assets/img/logo-ias.jpg"
+            alt="Logo del Instituto de Asistencia Social de Formosa"
+            width="350"
           />
-          <figcaption>
-            El IAS trabaja activamente en la promoción del juego responsable y
-            la prevención de la ludopatía en la provincia de Formosa.
-          </figcaption>
-        </figure>
-      </section>
-    </main>
+        </section>
 
-    <!-- El footer es el pie de página. -->
-    <footer>
-      <p>
-        &copy; 2026 Instituto de Asistencia Social
-      </p>
-      <p>Santiago Christian Berger</p>
-    </footer>
+          <h2>Juego Responsable</h2>
+          <p>
+            El IAS impulsa campañas de concientización sobre el
+            juego responsable, fomentando hábitos saludables entre los ciudadanos
+            y especialmente protegiendo a los grupos más vulnerables.
+          </p>
+
+          <!--  Elemento semántico para agrupar una imagen con su descripción . -->
+          <figure>
+        
+          <img class="estilo-imagen"
+              src="assets/img/juego-responsable.jpg"
+              alt="Campaña de juego responsable del IAS Formosa"
+              width="500"
+            />
+            <figcaption>
+              El IAS trabaja activamente en la promoción del juego responsable y
+              la prevención de la ludopatía en la provincia de Formosa.
+            </figcaption>
+          </figure>
+        </section>
+      </main>
+
+      <!-- El footer es el pie de página. -->
+      <footer>
+        <p>
+          &copy; 2026 Instituto de Asistencia Social
+        </p>
+        <p>Santiago Christian Berger</p>
+      </footer>
+    </div>
   </body>
 </html>
