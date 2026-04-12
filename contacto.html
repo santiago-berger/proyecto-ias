@@ -58,58 +58,72 @@
 
         <form id="formulario-contacto" action="#" method="post">
           <!-- Campo: Nombre completo -->
-          <label for="nombre">Nombre completo</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingresa tu nombre acá."
-            required
-          />
+          <div class="campo-form">
+            <label for="nombre">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresa tu nombre acá."
+              required
+            />
+          </div>
 
           <!-- Campo: Correo electrónico -->
-          <label for="email">Correo electrónico</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Ej. info.contacto@gmail.com"
-            required
-          />
+          <div class="campo-form">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ej. info.contacto@gmail.com"
+              required
+            />
+          </div>
 
           <!-- Campo: Teléfono -->
-          <label for="telefono">Teléfono</label>
-          <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            placeholder="Ej: (370) 4123456"
-          />
+          <div class="campo-form">
+            <label for="telefono">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Ej: (370) 4123456"
+            />
+          </div>
 
           <!-- Campo: Motivo de consulta -->
-          <label for="motivo">Motivo de consulta</label>
-          <select id="motivo" name="motivo" required>
-            <option value="">-- Seleccioná un motivo --</option>
-            <option value="licencias">Información sobre licencias</option>
-            <option value="denuncia">Realizar una denuncia</option>
-            <option value="juego_responsable">Juego responsable</option>
-            <option value="habilitaciones">Habilitaciones y permisos</option>
-            <option value="recaudacion">Recaudación y destino de fondos</option>
-            <option value="otro">Otro</option>
-          </select>
+          <div class="campo-form">
+            <label for="motivo">Motivo de consulta</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">-- Seleccioná un motivo --</option>
+              <option value="licencias">Información sobre licencias</option>
+              <option value="denuncia">Realizar una denuncia</option>
+              <option value="juego_responsable">Juego responsable</option>
+              <option value="habilitaciones">Habilitaciones y permisos</option>
+              <option value="recaudacion">
+                Recaudación y destino de fondos
+              </option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
 
           <!-- Campo: Mensaje -->
-          <label for="mensaje">Mensaje</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            placeholder="Escribí tu consulta, denuncia o comentario acá"
-            required
-          ></textarea>
+          <div class="campo-form campo-completo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribí tu consulta, denuncia o comentario acá"
+              required
+            ></textarea>
+          </div>
 
           <!-- Botón de envío -->
-          <br />
-          <button type="submit" class="btn-enviar">Enviar consulta</button>
+          <div class="campo-form campo-completo">
+            <br />
+            <button type="submit" class="btn-enviar">Enviar consulta</button>
+          </div>
         </form>
         <br />
         <details>
