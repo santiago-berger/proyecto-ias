@@ -335,12 +335,19 @@ textarea {
 
 /* Define el fondo, color de texto, centrado,
    padding y margen superior del pie de página. */
+/* Flexbox para el footer
+   - display: flex activa el modo flexbox en el pie de página
+   - flex-direction: column apila el contenido verticalmente (en columna)
+   - align-items: center centra horizontalmente todo el contenido del footer
+*/
 footer {
     background-color: #00ACAC;
     color: #ffffff;
-    text-align: center;
     padding: 18px;
     margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Aplica estilos específicos a los párrafos
