@@ -107,7 +107,42 @@ header {
   padding: 20px;
   border: 5px solid #006666;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: max-content;
+}
+
+/* Flexbox para el formulario de contacto
+   - display: flex activa el modo flexbox en el formulario
+   - flex-wrap: wrap permite que los elementos se reorganicen en nuevas filas cuando no entran en una sola
+   - gap: 15px define el espacio entre todos los elementos del formulario
+*/
+#formulario-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Cada campo-form es un contenedor flex en columna que agrupa su label e input.
+   Con width 47% dos campos entran en la misma fila.
+   El gap del formulario ocupa el espacio entre los dos campos del par. */
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 47%;
+}
+
+/* Los campos de mensaje y botón usan width 100% para ocupar todo el ancho de la fila */
+.campo-completo {
+    width: 100%;
+}
+
+/* Los input, select, textarea y botón ocupan el 100% de su contenedor .campo-form */
+#formulario-contacto input,
+#formulario-contacto select,
+#formulario-contacto textarea,
+#formulario-contacto .btn-enviar {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Resalta la sección de bienvenida en index.html
@@ -257,7 +292,6 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: 100%;
     padding: 8px;
     border: 1px solid #cccccc;
     border-radius: 4px;
